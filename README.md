@@ -74,11 +74,11 @@ http://localhost:8001/
 Lembrando que deve ser utilizado o método get.
 ```
 
-Para listar um local especifico:
+Para filtrar um local especifico pelo nome:
 ```
-http://localhost:8001/place/id
+http://localhost:8001/place/name
 
-Lembrando que deve ser utilizado o método get.
+Lembrando que deve ser utilizado o método get e o nome tem que está igual como foi cadastrado.
 ```
 
 Para cadastrar um novo lugar
