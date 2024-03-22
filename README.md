@@ -9,6 +9,7 @@ Antes de iniciar, verifique se você possui os seguintes pré-requisitos instala
 - Docker e Docker-Compose
 - Composer
 - Laravel Framework
+- PostgreSQL
 
 ## Passos para Execução
 
