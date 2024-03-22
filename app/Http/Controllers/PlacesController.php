@@ -12,7 +12,7 @@ class PlacesController extends Controller
     {
         $places = Place::all();
 
-        return $places; 
+        return response()->json($places, 200);
     }
 
     public function show(Request $request)
@@ -21,7 +21,7 @@ class PlacesController extends Controller
 
         if(!$place) return response()->json(['message' => 'Lugar nao encontrado!']);
         
-        return $place;
+        return response()->json($place, 200);
     }
 
     public function store(StorePlaceRequest $request)
@@ -30,7 +30,7 @@ class PlacesController extends Controller
 
         $newPlace = Place::create($data);
 
-        return $newPlace;
+        return response()->json($newPlace, 201);;
     }  
 
     public function update(StorePlaceRequest $request)
@@ -41,7 +41,7 @@ class PlacesController extends Controller
 
         $place->update($data);
         
-        return $place;
+        return response()->json($place, 200);
     }
 
     public function destroy(Request $request)
