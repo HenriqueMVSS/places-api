@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/', [PlacesController::class, 'index']);
-Route::get('/place/{id}', [PlacesController::class, 'show']);
+Route::get('/place/{name}', [PlacesController::class, 'show']);
 Route::post('/', [PlacesController::class, 'store']);
 Route::put('/place/{id}', [PlacesController::class, 'update']);
 Route::delete('/place/{id}', [PlacesController::class, 'destroy']);
